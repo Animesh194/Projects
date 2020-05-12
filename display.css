@@ -1,0 +1,121 @@
+body{
+	/*background-color: #a0a0a0;*/
+	background: #000000;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: white;
+}
+
+h1{
+	margin: auto;
+	margin-top: 5%;
+	text-align: center;
+	font-size: 36px;
+	font-weight: normal;
+	letter-spacing: .2rem;
+	background: -webkit-linear-gradient(white,#a3c8e4);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+}
+
+.gauge{
+	margin: 0 auto;
+	margin-top: 10%;
+	width: 100%;
+	max-width: 400px;
+}
+
+.gauge_shell{
+	width: 100%;
+	height: 0;
+	padding-bottom: 100%;
+	border-radius: 50%;
+	background-color: transparent;
+	position: relative;
+	border: 2px solid red;
+	overflow: hidden;
+}
+
+.gauge_body{
+	width: 80%;
+	/*height: 150%;*/
+	padding-bottom: 80%;
+	border-radius: 50%;
+	background-color: transparent;
+	border-left: 2px solid blue;
+	border-top: 2px solid blue;
+	border-bottom: 2px solid transparent;
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	overflow: hidden;
+}
+
+.text{
+	position: absolute;
+	left: 40%;
+	top: 78%;
+	font-size: 14px;
+}
+
+.text .digit{
+	font-size: 1.5rem;
+}
+
+.gauge_meter{
+	position: absolute;
+	top: 50%;
+	background-color: transparent;
+	border-top: 2px solid yellow;
+	top: 50%;
+	left: 0;
+	width: 75%;
+	height: 100%;
+	transform-origin: 66.5% 0%; 
+	transform: rotate(-40deg);
+	/*transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;*/ 
+	/*display: contents;*/
+}
+
+.gauge_inner_circle{
+	width: 5%;
+	padding-bottom: 5%;
+	border-radius: 50%;
+	background-color: white;
+	position: absolute;
+	top: 47%;
+	left: 47%;
+}
+
+.bold{
+	position: absolute;
+	top: 50%;
+	width: 50%;
+	/*border-top: 2px solid black;*/
+	transform-origin: top right;
+}
+
+.bold.right{
+	left: 50%;
+	transform-origin: top left;
+	text-align: right;
+	/*text-decoration: underline;
+	text-decoration-color: black;*/
+	padding-bottom: 1px; 
+}
+
+.left{
+	/*text-decoration: overline;
+	text-decoration-color: black;*/
+}
+
+.sp{
+	position: absolute;
+	top: 50%;
+	width: 50%;
+	transform-origin: top right;
+	/*text-decoration: underline;
+	text-decoration-color: black;*/	
+}
